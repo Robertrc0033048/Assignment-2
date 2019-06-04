@@ -55,6 +55,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.ParallelOUT = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -64,14 +66,16 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(105, 98);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(696, 426);
+            this.tabControl1.Size = new System.Drawing.Size(937, 571);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.SeriesOUT);
             this.tabPage1.Controls.Add(this.VAL5);
@@ -87,7 +91,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(688, 400);
+            this.tabPage1.Size = new System.Drawing.Size(929, 545);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Series";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -183,6 +187,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.button2);
             this.tabPage2.Controls.Add(this.ParallelOUT);
             this.tabPage2.Controls.Add(this.label5);
@@ -198,7 +203,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(688, 400);
+            this.tabPage2.Size = new System.Drawing.Size(929, 545);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Parallel";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -312,6 +317,24 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(146, 332);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(111, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Add 0 where no value";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(142, 314);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(111, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Add 0 where no value";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -358,6 +381,8 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 
